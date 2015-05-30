@@ -1,0 +1,66 @@
+header {
+  text-align: center;
+  color: white;
+}
+
+body {
+/*  background: url('https://lh6.googleusercontent.com/-wfwNzkpxfss/VE_rfVA-xvI/AAAAAAAAHvA/1Lmihex0_bs/w2263-h1273-no/WP_20140929_15_58_01_Pro.jpg');*/
+background: url('imgs/cover1.jpg');
+  background-size: cover;
+}
+.myphoto {
+  margin: 40px 0px 0px 0px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+
+header ul {
+  padding: 10px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+header li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  font-size: 24px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 700px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.5);
+  line-height: 30px;
+  font-size: 20px;
+  min-height: 100%;
+}
+
+.site-footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(255,255,255,0.5);
+}
+
+.site-footer img{
+  width: 40px;
+  height: 40px;
+  margin-right: 5em;
+  margin-top: 0.3em;
+}
+
+.content a {
+  color: #345423;
+}
+main > * {
+  padding: 10px;
+  flex: 1 100%;
