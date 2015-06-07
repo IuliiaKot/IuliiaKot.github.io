@@ -68,3 +68,7 @@ main > * {
 .padd {
   text-float: center;
 }
+
+.post code {
+  font-size: 10px;
+}

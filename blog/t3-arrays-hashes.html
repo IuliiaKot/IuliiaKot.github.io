@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <head>
+    <title>About me</title>
+
+    <link rel="stylesheet" type="text/css" href="../default.css">
+  </head>
+  <body>
+    <header>
+      <img class="myphoto" src="https://en.gravatar.com/userimage/86335459/02c9507c6470cf84648698739a5d3df0.jpg?size=200">
+
+
+      <ul>
+        <li><a href="../index.html">Home</a></li>z
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="../blog_index.html">Blog</a></li>
+      </ul>
+
+    </header>
+<main class="content">
+  <h1>Ruby: Arrays and Hashes</h1>
+  <h4>June 4, 2015</h4>
+
+  <section class="post">
+    <p>
+      Arrays and hashes are common data types used to store information. Both store collections of object.
+    </p>
+    <h3>Arrays</h3>
+    <p>
+      An array in Ruby is an object. Array can store object of different data type. Each element in array can be refferd to by an index. Ruby like in others languages a first elemen has index 0. There are to type creating arrays. Arrays can be instantiated with the new method:</p>
+
+         <code>a = Array.new()   //create an ampty array []</code>
+        <br>
+         <code>a.push(2)   => a[2]</code>
+         <br>
+         <code>a.push(45)  => a[2,45]  //push method add an item to the end of the array.</code>
+         <br>
+         <code>b = Array.new(3)  => [nil, nil, nil]</code>
+         <br>
+         <code>c = Array.new(3, "99")  => ["99","99","99"]  //create array with 3 elemntsv</code>
+
+      <p>Another way to create array just put elements in square brackets:</p>
+
+          <code>a = [1,2,3]</code>
+          <br>
+          <code>a = []   // create empty array</code>
+
+      <p>If you want to get elemenf from array you can access it by index</p>
+
+          <code>a[0]    => 1</code>
+          <br>
+          <code>a[3]    => nil   //because arry doesn't have any elemnt by index 3. Remember index start from 0!</code>
+
+      <p>Also, if you want take last element and don't think about index you can use method 'last'</p>
+
+          <code>a.last    => 3</code>
+
+      <p>The same way for the first element</p>
+
+          <code>a.first   => 1</code>
+
+      <p>But if you want to get index of this element you can use method 'index'. But remember this method return index of first occurs element in array or nil if there is not an element in array.</p>
+
+          <code>a.index(1)    => 1</code>
+          <br>
+          <code>a.index(45)   => nil</code>
+
+
+    <article>
+      <h3>Nested Arrays</h3>
+      <p>Nested array is an array with one or more arrays nested inside of it. Nested arrays are useful when storing things in multiple categories. There can be multiple levels of nesting.</p>
+
+          <code>a = [[1, 2, 4], ["a", "b", "c"]]</code>
+
+      <p>If we want to access the first value in nested array, we would do so in the same way as a regular array:</p>
+
+          <code>a[0]    => [1, 2, 4]</code>
+          <br>
+          <code>a[1]    => ["a", "b", "c"]</code>
+
+      <p>If you want to dip into the inner arrays, you should add an exstra index:</p>
+
+          <code>a[0][0]    => 1</code>
+          <br>
+          <code>a[1][1]    => "b"</code>
+
+      <p>This is simple examle how to crate and work with arrays in Ruby. More information you can find <a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-find_index">here</a><p>
+    </artcile>
+
+    <article>
+      <h3>Hashes</h3>
+      <p>
+        A Hash is a dictionary-like collection of unique keys and their values. Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type.<p>
+
+        <p>Hashes enumerate their values in the order that the corresponding keys were inserted.<p>
+
+        <p>A Hash can be easily created by using its implicit form:</p>
+
+          <code>name = { "Julia" => 23, "Max" => 34 }</code>
+
+        <p>Also you can use sumbols for key:<p>
+
+          <code>name = { :Julia => 23, :Max => 34 }</code>
+
+        <p>In similar way to array empty hash can be created by using empty curly brackets<p>
+
+          <code>name = {}</code>
+
+        <p>Or a new hash can also be created by using the new method on the class</p>
+
+          <code>name = Hash.new</code>
+
+        <p>For getting value in array we used index but when we work with hash we use key:</p>
+
+          <code>fruits = {:orange => 34, :apple => 12, :banana => 48}</code>
+          <br>
+          <code>fruits[:orange]       =>  34</code>
+
+        <p>To modify value :</p>
+
+          <code>fruits[:orange] = 9</code>
+          <br>
+          <code>fruits            =>  fruits = {:orange => 9, :apple => 12, :banana => 48</code>
+
+      <p>More infomations about hashes you can find <a href="http://ruby-doc.org/core-2.2.0/Hash.html">here</a></p>
+
+
+    </article>
+  </section>
+</main>
+  </body>
+</html>
