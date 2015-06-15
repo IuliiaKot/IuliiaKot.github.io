@@ -49,7 +49,7 @@ ul {
 }
 
 .add-top {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .content span a {
@@ -63,7 +63,15 @@ ul {
   width: 50px;
 }
 
-img {
+.myphoto{
   border-radius: 78%;
+  float: left;
+}
+
+.contact img {
+  width: 30px;
+  height: 30px;
+}
+.contact p {
   float: left;
 }
