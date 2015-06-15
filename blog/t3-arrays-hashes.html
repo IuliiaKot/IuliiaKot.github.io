@@ -2,26 +2,30 @@
   <head>
     <title>About me</title>
 
-    <link rel="stylesheet" type="text/css" href="../default.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header>
-      <img class="myphoto" src="https://en.gravatar.com/userimage/86335459/02c9507c6470cf84648698739a5d3df0.jpg?size=200">
-
-
-      <ul>
-        <li><a href="../index.html">Home</a></li>z
-        <li><a href="../about.html">About me</a></li>
-        <li><a href="#">Projects</a></li>
+    <main>
+      <header class="header add-bottom">
+        <p class="name">{Iuliia Kotlenko: Technical Blog}</p>
+        <ul class="menu">
+        <li><a href="../index.html">Home</a> /</li>
+        <li><a href="../about.html">About</a> / </li>
+        <li><a href="#">Projects</a> / </li>
         <li><a href="../blog_index.html">Blog</a></li>
       </ul>
+        <!-- <section>
+          <a href="https://github.com/IuliiaKot" target="_blank"><img alt="github" src="imgs/github.png"></a>
+          <a href="https://www.linkedin.com/pub/iuliia-kotlenko/39/340/9" target="_blank"><img alt="linkedin" src="imgs/linkedin.png"></a>
+          <a href="https://twitter.com/IuliiaKot" target="_blank"><img alt="twitter" src="imgs/twitter.png"></a>
+          <a href="https://www.facebook.com/iuliia.kotlenko" target="_blank"><img alt="facebook" src="imgs/facebook.png"></a>
+        </section> -->
 
-    </header>
-<main class="content">
-  <h1>Ruby: Arrays and Hashes</h1>
-  <h4>June 4, 2015</h4>
+      </header>
+  <section class="content">
+    <h1>Ruby: Arrays and Hashes</h1>
+    <h4>June 4, 2015</h4>
 
-  <section class="post">
     <p>
       Arrays and hashes are common data types used to store information. Both store collections of object.
     </p>
@@ -66,7 +70,7 @@
           <code>a.index(45)   => nil</code>
 
 
-    <article>
+
       <h3>Nested Arrays</h3>
       <p>Nested array is an array with one or more arrays nested inside of it. Nested arrays are useful when storing things in multiple categories. There can be multiple levels of nesting.</p>
 
@@ -85,9 +89,7 @@
           <code>a[1][1]    => "b"</code>
 
       <p>This is simple examle how to crate and work with arrays in Ruby. More information you can find <a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-find_index">here</a><p>
-    </artcile>
 
-    <article>
       <h3>Hashes</h3>
       <p>
         A Hash is a dictionary-like collection of unique keys and their values. Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type.<p>
@@ -124,8 +126,6 @@
 
       <p>More infomations about hashes you can find <a href="http://ruby-doc.org/core-2.2.0/Hash.html">here</a></p>
 
-
-    </article>
   </section>
 </main>
   </body>

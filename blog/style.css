@@ -1,4 +1,4 @@
-header {
+.header {
   height: 80px;
 }
 
@@ -6,7 +6,7 @@ header {
   margin-top: 20px;
   float: left;
   color: #0f9fb4;
-  font-size: 25pt;
+  font-size: 20pt;
   margin-left: 10px;
 }
 
@@ -45,25 +45,5 @@ ul {
   border-radius: 20px;
   box-shadow: 2px 1px 1px 4px #0f9fb0;
   padding: 1.5em;
-  margin-bottom: 30px;
-}
-
-.add-top {
   margin-top: 70px;
-}
-
-.content span a {
-  text-decoration: none;
-  float: right;
-  font-size: 24px;
-}
-
-.content span img {
-  height: 50px;
-  width: 50px;
-}
-
-img {
-  border-radius: 78%;
-  float: left;
 }

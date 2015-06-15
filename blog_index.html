@@ -1,37 +1,71 @@
 <!DOCTYPE html>
-<html>
   <head>
     <title>About me</title>
 
-    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" href="default.css">
   </head>
   <body>
-    <header>
-      <img alt="background "class="myphoto" src="https://en.gravatar.com/userimage/86335459/02c9507c6470cf84648698739a5d3df0.jpg?size=200">
+    <main>
+    <header class="header add-bottom">
+<!--     <img alt="background" class="myphoto" src="https://en.gravatar.com/userimage/86335459/02c9507c6470cf84648698739a5d3df0.jpg?size=130"> -->
+    <p class="name">{Iuliia Kotlenko}</p>
+    <ul class="menu">
+      <li><a href="index.html">Home</a> / </li>
+      <li><a href="about.html">About</a> / </li>
+      <li><a href="#">Projects</a> / </li>
+      <li><a href="blog_index.html">Blog</a></li>
+    </ul>
+      <!-- <section>
+        <a href="https://github.com/IuliiaKot" target="_blank"><img alt="github" src="imgs/github.png"></a>
+        <a href="https://www.linkedin.com/pub/iuliia-kotlenko/39/340/9" target="_blank"><img alt="linkedin" src="imgs/linkedin.png"></a>
+        <a href="https://twitter.com/IuliiaKot" target="_blank"><img alt="twitter" src="imgs/twitter.png"></a>
+        <a href="https://www.facebook.com/iuliia.kotlenko" target="_blank"><img alt="facebook" src="imgs/facebook.png"></a>
+      </section> -->
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="blog_index.html">Blog</a></li>
-      </ul>
     </header>
-    <article class="content">
-      <h2>May</h2>
-      <ul>
-        <li>May 22, 2015<a href="blog/t1-git-blog.html"> Introduction to Git and Github</a></li>
-        <li>May 23, 2015<a href="blog/c1-chefs-kitchen.html"> Impressions of DBC</a></li>
-        <li>May 31, 2015<a href="blog/t2-css-design.html"> Difference between Margin, Border, and Padding</a></li>
-        <li>June 4, 2015<a href="blog/t3-arrays-hashes.html"> Ruby: Arrays and Hashes</a></li>
-        <li>June 5, 2015<a href="blog/c3-thinking-style.html"> My Thinking Style</a></li>
-
-      </ul>
+    <article class="content add-top">
+      <h3>May 22, 2015 Introduction to Git and Github</h3>
+      <p>
+        Git is system for version control of files that was created by Linus Trovalds. It allows you to easily store, update and manage versions of files. Git provides the ability to update and edit the project files to reflect changes made by others. Every time you commit or save the changes of your project, Git makes duplicates of the original file...
+      </p>
+      <span class="continue-read"><a href="blog/t1-git-blog.html"><img src="imgs/read_more.png" alt="read_more"></a></span>
     </article>
-    <footer class="site-footer">
-      <a href="https://github.com/IuliiaKot" target="_blank"><img alt="github" src="imgs/github.png"></a>
-      <a href="https://www.linkedin.com/pub/iuliia-kotlenko/39/340/9" target="_blank"><img alt="linkedin" src="imgs/linkedin.png"></a>
-      <a href="https://twitter.com/IuliiaKot" target="_blank"><img alt="twitter" src="imgs/twitter.png"></a>
-      <a href="https://www.facebook.com/iuliia.kotlenko" target="_blank"><img alt="facebook" src="imgs/facebook.png"></a>
-    </footer>
+    <article class="content">
+        <h3>May 23, 2015 Impressions of DBC</h3>
+        <p>Couple months ago I decided to find school for improving my knowledge and finally finished what I started many years ago. There are a lot of schools. Almost all of them have very similar program(lecture, pair programming, solo project).</p>
+
+        <span class="continue-read"><a href="blog/c1-chefs-kitchen.html"><img src="imgs/read_more.png" alt="read_more"></a></span>
+
+
+    </article>
+    <article class="content">
+       <h3>May 31, 2015 Difference between Margin, Border, and Padding</h3>
+       <p>Margin, padding and border - is part of the so-called block model. The mechanism of the block model is the following: In the middle there is a content area that surrounds the padding, border surrounded by a border, which in turn is surrounded by fields margin. Visual representation...</p>
+
+      <span class="continue-read"><a href="blog/t2-css-design.html"><img src="imgs/read_more.png" alt="read_more"></a></span>
+    </article>
+
+    <article class="content">
+        <h3>June 4, 2015 Ruby: Arrays and Hashes</h3>
+        <p>An  array in Ruby is an object. Array can store object of different data type. Each element in array can be refferd to by an index. Ruby like in others languages a first elemen has index 0. There are to type creating arrays. Arrays can be instantiated...</p>
+       <span class="continue-read"><a href="blog/t3-arrays-hashes.html"><img src="imgs/read_more.png" alt="read_more"></a></span>
+    </article>
+    <article class="content">
+     <h3>June 5, 2015 My Thinking Style</h3>
+     <p>
+      This quality allows you to visualize, to conceive ideas, to understand or believe that which you cannot actually see. When you are using your abstract quality, you are using your intuition, your imagination, and you are looking beyond “what is”
+     </p>
+     <span class="continue-read"><a href="blog/c3-thinking-style.html"><img src="imgs/read_more.png" alt="read_more"></a></span>
+    </article>
+    <article class="content">
+     <h3>June 12, 2015 Understanding Enumerable#group_by</h3>
+     <p>
+      e have learned about Array and Hash, but it's just half way. Each of them have own methods for adding, deleting and accessing data.
+
+      Enumerable methods are the <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-group_by">bunch of methods</a> for manipulatinf with Array and Hash. Enumerable gives ...
+     </p>
+     <span class="continue-read"><a href="blog/t4-enumerable-methods.html"><img src="imgs/read_more.png" alt="read_more"></a></span>
+    </article>
+    </main>
   </body>
 </html>

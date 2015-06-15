@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <head>
+    <title>About me</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <main>
+      <header class="header add-bottom">
+        <p class="name">{Iuliia Kotlenko: Technical Blog}</p>
+        <ul class="menu">
+        <li><a href="../index.html">Home</a> /</li>
+        <li><a href="../about.html">About</a> / </li>
+        <li><a href="#">Projects</a> / </li>
+        <li><a href="../blog_index.html">Blog</a></li>
+      </ul>
+        <!-- <section>
+          <a href="https://github.com/IuliiaKot" target="_blank"><img alt="github" src="imgs/github.png"></a>
+          <a href="https://www.linkedin.com/pub/iuliia-kotlenko/39/340/9" target="_blank"><img alt="linkedin" src="imgs/linkedin.png"></a>
+          <a href="https://twitter.com/IuliiaKot" target="_blank"><img alt="twitter" src="imgs/twitter.png"></a>
+          <a href="https://www.facebook.com/iuliia.kotlenko" target="_blank"><img alt="facebook" src="imgs/facebook.png"></a>
+        </section> -->
+
+      </header>
+  <section class="content">
+    <h1>Ruby: Understanding Enumerable#group_by</h1>
+    <h4>June 12, 2015</h4>
+     <p>
+      We have learned about Array and Hash, but it's just half way. Each of them have own methods for adding, deleting and accessing data.
+
+      Enumerable methods are the <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-group_by">bunch of methods</a> for manipulatinf with Array and Hash. Enumerable gives us lots of useful ways of doing something to every element of a collection object(array, hash)
+
+      Let's look at the method #group_by: Groups the collection by result of the block. Returns a hash where the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key.
+
+      If no block is given an enumerator is returned.
+    </p>
+      <h4>Enumerable#group_by and Arrays</h4>
+      <code>names = ["Julia", "Maxim", "Kate", "Natascha", "Oleg"]</code>
+      <br>
+      <code>=> ["Julia", "Maxim", "Kate", "Natascha", "Oleg"]</code>
+      <br>
+      <code>names.group_by {|name| name.length}</code>
+      <br>
+      <code>=> {5=>["Julia", "Maxim"], 4=>["Kate", "Oleg"], 8=>["Natascha"]}</code>
+
+      <h4>Explanations</h4>
+      <p>Each name is passed to the block. The result of block is the length of names, and this result is the group into which the name will go.</p>
+
+      <h4>Enumerable#group_by and Hashes</h4>
+      <code>food = {"Julia" => "fish", "Oleg" => "beef", "Anton" => "pasta", "Nata" => "fish", "Dima" => "chiken", "Kate" => "pasta"}</code>
+      <br>
+      <code>=> {"Julia"=>"fish", "Oleg"=>"beef", "Anton"=>"pasta", "Nata"=>"fish", "Dima"=>"chiken", "Kate"=>"pasta"}</code>
+      <code>food.group_by {|key, value| value}</code>
+      <br>
+      <code>=> {"fish"=>[["Julia", "fish"], ["Nata", "fish"]], "beef"=>[["Oleg", "beef"]], "pasta"=>[["Anton", "pasta"], ["Kate", "pasta"]], "chiken"=>[["Dima", "chiken"]]}</code>
+      <h4>Explanations</h4>
+      <p>In this example we group the people by the food</p>
+
+  </section>
+</main>
+  </body>
+</html>
