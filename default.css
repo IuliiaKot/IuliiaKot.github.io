@@ -1,6 +1,17 @@
+html {
+
+}
 header {
   height: 80px;
    background-color: #262626;
+}
+
+.background {
+  background: url('imgs/cover1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
@@ -55,6 +66,10 @@ ul {
   margin-bottom: 30px;
 }
 
+.about {
+    height: 340px;
+}
+
 .add-top {
   margin-top: 50px;
 }
@@ -88,4 +103,24 @@ span {
   color: #ffde00;
   padding-left: .5em;
 }
+.content {
+  background-color: white;
+}
 
+.content .left {
+  float: left;
+  width: 30%;
+}
+
+.content .right {
+  float: right;
+  width: 70%;
+}
+
+.contact li {
+  display: inline;
+}
+
+.contact a {
+  padding-left: 15px;
+}
