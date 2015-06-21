@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <head>
+    <title>Iuliia's Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Hind:500' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main>
+      <header class="header add-bottom">
+        <p class="name">{Iuliia Kotlenko: Technical Blog}</p>
+        <ul class="menu">
+        <li><a href="../index.html">Home</a><span>/</span></li>
+        <li><a href="../about.html">About</a><span>/</span></li>
+        <li><a href="#">Projects</a><span>/</span></li>
+        <li><a href="../blog_index.html">Blog</a></li>
+      </ul>
+        <!-- <section>
+          <a href="https://github.com/IuliiaKot" target="_blank"><img alt="github" src="imgs/github.png"></a>
+          <a href="https://www.linkedin.com/pub/iuliia-kotlenko/39/340/9" target="_blank"><img alt="linkedin" src="imgs/linkedin.png"></a>
+          <a href="https://twitter.com/IuliiaKot" target="_blank"><img alt="twitter" src="imgs/twitter.png"></a>
+          <a href="https://www.facebook.com/iuliia.kotlenko" target="_blank"><img alt="facebook" src="imgs/facebook.png"></a>
+        </section> -->
+
+      </header>
+
+    <section class="content">
+      <h1>Classes, Objects, and Variables</h1>
+      <h4>June 18 2015</h4>
+      <p>
+        <em>"Ruby is a perfect Object Oriented Programming Language. Everyting in Ruby is object."</em></p>
+        <p>Object orientention is not only development style. If you look around you'll see objects are everywhere: your car, your dog. And every objects has <em>state</em> and <em>behavior</em>. Take for example dog: state(name, color, breed) and behavior (barking, fetching). So for every objects which you see ask yoursefl two questoins: "What possible states can this object be in?" and "What possible behavior can this object perform?".</p>
+
+        Let's start from example. We created class Square<br>
+        <img src="imgs/create_class.png"><br>
+
+        <p> What we did in this example
+          <ul>
+            <li>The <code><bold>class</bold></code> keyword define a class.</li>
+            <li>The <code><bold>initialize</bold></code> method is what actually constructs the data structure. Every class <bold>must</bold> contain an <code><bold>initialize</bold></code> method.</li>
+            <li><code>@side_length</code> is an object variable. Similar to the keys of a hash. The <code>@</code> sign distinguishes <code><bold>@street</bold></code> as an object variable. Every time you create an object of the class <code>Square</code>, this object will contain a <code>@side_length</code> variable.</li>
+          </ul><br>
+          Let's create a new instance of <code>class Square.</code><br>
+          <img src="imgs/new_instance.png">
+        </p>
+        <h3>Getter and Setter methods</h3>
+        <p>Ok. Now we have class Square and already created instance of this class. But what if you want now read or rewrite <code>side_length</code>. How we can do this. For this purpose we need getter and setter method. <br>
+          <img src="imgs/getter_setter.png"><br>
+          <img src="imgs/get_set_irb.png"><br>
+        But making our code more elegant we can use <code>attr_reader and attr_writer</code> in Ruby.<br>
+        <code>attr_reader</code> is a getter which means that it just returns a value or state outside of the class, but does not change it.<br>
+
+        <code>attr_writer</code> is a setter which means that you can change the value of the variable outside of the class, but it is not readable.<br>
+        <img src="imgs/attr.png">
+      </p>
+      <p>
+        <h3>Methods</h3>
+        Inside our <code>class Square</code> we already have <code>method initialize</code>. Now we will add <code>method area</code> and <code>method perimetr</code><br>
+        <img src="imgs/more_method.png"><br>
+        All of this methods are objects methods.
+      </p>
+    </section>
+  </main>
+  </body>
+</html>

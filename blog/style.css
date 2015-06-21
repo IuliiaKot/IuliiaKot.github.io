@@ -1,14 +1,22 @@
+body {
+  background-color: #f9f8f3;
+  font-family: 'Hind', sans-serif;
+}
+
 .header {
   height: 80px;
+  background-color: #262626;
 }
 
 .name {
   margin-top: 20px;
   float: left;
-  color: #0f9fb4;
+  color: #ffde00;
   font-size: 20pt;
   margin-left: 10px;
+
 }
+
 
 .header ul {
   float: right;
@@ -36,6 +44,7 @@ ul {
   text-decoration: none;
   font-size: 18pt;
   color: #0f9fb4;
+  color: #ffde00;
 }
 
 .content {
@@ -43,7 +52,23 @@ ul {
   margin-right: auto;
   width: 60%;
   border-radius: 20px;
-  box-shadow: 2px 1px 1px 4px #0f9fb0;
+  box-shadow: 2px 1px 1px 2px #6f7d80;
   padding: 1.5em;
   margin-top: 70px;
+  color: #262626;
+}
+
+span {
+  font-size: 24px;
+  color: #ffde00;
+  padding-left: .5em;
+}
+
+.content img {
+  width: 50%;
+  height: 10%;
+}
+
+.content code {
+  font-size: 16px;
 }
