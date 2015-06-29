@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <head>
+    <title>Iuliia's Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Hind:500' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main>
+      <header class="header add-bottom">
+        <p class="name">{Iuliia Kotlenko: Technical Blog}</p>
+        <ul class="menu">
+        <li><a href="../index.html">Home</a><span>/</span></li>
+        <li><a href="../about.html">About</a><span>/</span></li>
+        <li><a href="#">Projects</a><span>/</span></li>
+        <li><a href="../blog_index.html">Blog</a></li>
+      </ul>
+        <!-- <section>
+          <a href="https://github.com/IuliiaKot" target="_blank"><img alt="github" src="imgs/github.png"></a>
+          <a href="https://www.linkedin.com/pub/iuliia-kotlenko/39/340/9" target="_blank"><img alt="linkedin" src="imgs/linkedin.png"></a>
+          <a href="https://twitter.com/IuliiaKot" target="_blank"><img alt="twitter" src="imgs/twitter.png"></a>
+          <a href="https://www.facebook.com/iuliia.kotlenko" target="_blank"><img alt="facebook" src="imgs/facebook.png"></a>
+        </section> -->
+
+      </header>
+
+    <section class="content">
+      <h1>What are blocks, procs, and lambdas?</h1>
+      <h4>June 27 2015</h4>
+      <p>
+
+        <p>Maybe one of the confusing parts of learning Ruby is understanding what is blocks, procs and lambdas and how they work. Blocks, Procs and lambdas (referred to as closures in Computer Science) is a powerful side of Ruby.</p>
+
+        <h3>Blocks and Procs</h3>
+        <p>We already met blocks many times and declare them braces <code>{}</code> or <code>do...end</code></p>
+          <img src="imgs/blocks.png">
+
+        <p>Look on the next example. This is Proc and '&' is special symbol tells ruby to turn the proc into a block</p>
+        <img src="imgs/proc.png">
+        <p>Both of this example very similar and still hard to undesrtand differences between <code>block</code> and <code>proc</code>. But there are some differences between them.
+        <h4>Proc are objects, block are not</h4>
+        <p>A proc is an instance of the Proc class. When we run our example in console we will see the p returns a proc object.
+          <img src="imgs/console_proc.png">
+        </p>
+        <h4>At most one block can appear in an argument list</h4>
+         <p>You can pass multiple procs to methods.</p>
+        <img src="imgs/console_proc_2.png">
+        <h3>Procs and Lambdas</h3>
+        <p>Procs and Lambdas are both Proc objects.</p>
+        <img src="imgs/lambda.png">
+        <h4>Lambdas check the number of arguments, while procs do not</h4>
+        <img src="imgs/lambda_argument.png">
+        <p>when proc</p>
+        <img src="imgs/proc_argument.png">
+    </section>
+  </main>
+  </body>
+</html>
