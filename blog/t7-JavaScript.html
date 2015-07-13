@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <head>
+    <title>Iuliia's Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Hind:500' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main>
+      <header class="header add-bottom">
+        <p class="name">{Iuliia Kotlenko: Technical Blog}</p>
+        <ul class="menu">
+        <li><a href="../index.html">Home</a><span>/</span></li>
+        <li><a href="../about.html">About</a><span>/</span></li>
+        <li><a href="#">Projects</a><span>/</span></li>
+        <li><a href="../blog_index.html">Blog</a></li>
+      </ul>
+        <!-- <section>
+          <a href="https://github.com/IuliiaKot" target="_blank"><img alt="github" src="imgs/github.png"></a>
+          <a href="https://www.linkedin.com/pub/iuliia-kotlenko/39/340/9" target="_blank"><img alt="linkedin" src="imgs/linkedin.png"></a>
+          <a href="https://twitter.com/IuliiaKot" target="_blank"><img alt="twitter" src="imgs/twitter.png"></a>
+          <a href="https://www.facebook.com/iuliia.kotlenko" target="_blank"><img alt="facebook" src="imgs/facebook.png"></a>
+        </section> -->
+
+      </header>
+
+    <section class="content">
+      <h1>Ruby classes vs. JavaScript constructor functions</h1>
+      <h4>July 11 2015</h4>
+      <article>
+        <h3>How are Javascript objects created?</h3>
+        <p>In JS you can create objects using to ways. First is the literal method: </p>
+        <img src="imgs/js_obj.png">
+        <p>There are several examples how we can read property, add new propery. You can see that it similar to the Ruby hash.</p>
+        <img src="imgs/obj_example.png">
+        <p>Or you can using functions and the new operator. This is constructor functions because the purpose is to create new objects.</p>
+        <img src="imgs/js_obj1.png">
+        <p>Since this is function, we can initialize objects. In this example we are assigning properties. In Ruby we did the same with <code>initialize</code> instance method. And now maybe you have quastion why in JS there are to ways to create objects. If you needed to create multiple objects, it would be pretty cumbersome to define them using the literal method over and over. Constructor functions provide a way to define behaviour which is shared by all new objects that are created by that function. This shared behaviour is made possible by the Function.prototype property. Javascript is a classless language, but the prototype property on a function the closest thing to any notion of classes. The prototype is not a class but an ordinary object, and so you can mold this object by adding properties:</p>
+        <img src="imgs/more_obj.png">
+      </article>
+      <article>
+        <h3>How are Ruby objects created?</h3>
+        <p>Classes in Ruby provide a way of creating objects with defined behaviour via the new method. The important distinction is that new is a method of Class, and not a keyword operator as it is in JavascriptLike javascript, new creates a brand new object and binds it to the current context, or self, Ruby"s equivalent to Javascript"s this.</p>
+        <img src="imgs/ruby_class.png">
+      </article>
+    </section>
+  </main>
+  </body>
+</html>
+
